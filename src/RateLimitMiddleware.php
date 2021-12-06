@@ -74,7 +74,8 @@ class RateLimitMiddleware implements MiddlewareInterface
                 throw new MissingRequirement('Could not detect the client IP');
             }
 
-            $key = str_replace('.', '-', $key);
+            // Replace ':'s in IPv6 addresses with '--' and '.'s in IPv4 with '-'.
+            $key = str_replace(['.', ':'], ['-', '--'], $key);
         }
 
         $data = $this->storage->get($key);
