@@ -7,7 +7,6 @@
         "psr/container": "^2.0",
         "psr/http-server-middleware": "^1.0",
         "mezzio/mezzio-problem-details": "^1.0",
-        "laminas/laminas-diactoros": "^2.0",
         "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
     },
     "require-dev": {
@@ -15,7 +14,8 @@
         "php-coveralls/php-coveralls": "^2.1",
         "phpstan/phpstan": "^1.2",
         "phpunit/phpunit": "^9.0",
-        "squizlabs/php_codesniffer": "^3.4"
+        "squizlabs/php_codesniffer": "^3.4",
+        "laminas/laminas-diactoros": "^2.0 || ^3.0"
     },
     "license": "BSD-3-Clause",
     "keywords": [
